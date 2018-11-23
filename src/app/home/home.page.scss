@@ -1,1 +1,12 @@
-
+ion-content{
+    padding-top: 50px;
+    text-align: center;
+    ion-title{
+        font-family: "Roboto", sans-serif;
+        font-size: 4em;
+        padding: 250px;
+    }
+    ion-button{
+        margin: 0 auto;
+    }
+}
