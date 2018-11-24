@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+//import { HttpClient } from '@angular/common/http'
+import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-about',
@@ -7,10 +8,11 @@ import { Observable } from 'rxjs';
   styleUrls: ['about.page.scss']
 })
 export class AboutPage{
-  users$: Observable<any>;
-  constructor(private httpClient: HttpClient){
-    this.users$ = this.httpClient.get('https://jsonplaceholder.typicode.com/users');
-    this.users$.subscribe(data=>this.users$=data);
+  users$: Object;
+  constructor(private data: DataService){
+    this.data.getUsers().subscribe(
+      data => this.users$ = data
+    )
   }
   /*this.data.getUsers().subscribe(
     data => this.users$ = data

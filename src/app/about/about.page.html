@@ -1,19 +1,19 @@
 
 <ion-content>
     <div id="wrapper">
-        <ion-title>Organization of the company</ion-title>
+        <ion-title>Organizational chart of the company</ion-title>
         <ion-list>
-            <div *ngFor="let user of users$">
-                <ion-card>
-                    <ion-item>
-                        <ion-avatar>
-                            
-                        </ion-avatar>
-                        <h2>{{user.name}}</h2>
-                        <p *ngIf="{{user.id}}==1">CEO</p>
-                    </ion-item>
-                </ion-card>
-            </div>
+            <ion-card *ngFor="let user of users$">
+                <ion-card-header>
+                    <ion-avatar>
+                        <img src="/assets/images/icon.png">
+                    </ion-avatar>
+                    <a href="/details/{{user.id}}"><h2>{{user.name}}</h2></a>
+                    <p *ngIf="user.id ==1">CEO</p>
+                    <p *ngIf="user.id ==2 || user.id ==3 || user.id ==4">Manager</p>
+                    <p *ngIf="user.id > 4 ">Employee</p>
+                </ion-card-header> 
+            </ion-card>
         </ion-list>
     </div>
     
