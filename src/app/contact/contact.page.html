@@ -1,12 +1,13 @@
 <ion-content style="--offset-top:50px;">
   <div id="wrapper">
-    <ion-title>Contact us</ion-title>
+    
     <div id="form-wrapper">
+      <ion-title>Contact us</ion-title>
       <ion-list>
         <ion-row>
           <ion-col>
             <ion-item>
-                <ion-input type="text" placeholder="Username"></ion-input>
+                <ion-input type="text" placeholder="First name and last name"></ion-input>
               </ion-item>  
           </ion-col>
           <ion-col>
@@ -16,54 +17,12 @@
           </ion-col>
         </ion-row>
         <ion-item>
-          <ion-input type="text" name="message" placeholder="Message"></ion-input>
+          <ion-textarea name="message" placeholder="Message"></ion-textarea>
         </ion-item>
+        <ion-button color="secondary">Submit</ion-button>
       </ion-list>
-      <ion-button color="secondary">Send</ion-button>
+      
     </div>
     
   </div>
-<!--
-  <div class="wrap-contact100">
-
-      <form class="contact100-form validate-form">
-        <ion-title>
-            Contact Us
-        </ion-title>
-          
-
-        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
-          <span class="label-input100">Your Name</span>
-          <input class="input100" type="text" name="name" placeholder="Enter your name">
-          <span class="focus-input100"></span>
-        </div>
-
-        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-          <span class="label-input100">Email</span>
-          <input class="input100" type="text" name="email" placeholder="Enter your email addess">
-          <span class="focus-input100"></span>
-        </div>
-
-        <div class="wrap-input100 validate-input" data-validate = "Message is required">
-          <span class="label-input100">Message</span>
-          <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
-          <span class="focus-input100"></span>
-        </div>
-
-        <div class="container-contact100-form-btn">
-          <button class="contact100-form-btn">
-            <span>
-              Submit
-              <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
-            </span>
-          </button>
-        </div>
-      </form>
-
-      <span class="contact100-more">
-        For any question contact our 24/7 call center: <span class="contact100-more-highlight">+001 345 6889</span>
-      </span>
-    </div>-->
-    
-      
 </ion-content>

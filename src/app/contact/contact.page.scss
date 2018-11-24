@@ -3,7 +3,25 @@ ion-content{
     #wrapper{
         padding-top: 100px;
         #form-wrapper{
-            text-align: center;
+            width: 900px;
+            margin: 0 auto;
+            ion-title{
+                font-size: 3em;
+            }
+            ion-list{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            ion-item{
+                margin: 45px 15px;
+            }
+            ion-textarea{
+                height: 250px;
+            }
+            ion-button{
+                margin: 10px auto;
+            }
         }
     }
 }
