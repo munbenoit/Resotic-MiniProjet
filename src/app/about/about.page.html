@@ -1,2 +1,20 @@
 
-<ion-content></ion-content>
+<ion-content>
+    <div id="wrapper">
+        <ion-title>Organization of the company</ion-title>
+        <ion-list>
+            <div *ngFor="let user of users$">
+                <ion-card>
+                    <ion-item>
+                        <ion-avatar>
+                            
+                        </ion-avatar>
+                        <h2>{{user.name}}</h2>
+                        <p *ngIf="{{user.id}}==1">CEO</p>
+                    </ion-item>
+                </ion-card>
+            </div>
+        </ion-list>
+    </div>
+    
+</ion-content>
