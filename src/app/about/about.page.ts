@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-//import { HttpClient } from '@angular/common/http'
 import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
 @Component({
@@ -8,14 +7,12 @@ import { Observable } from 'rxjs';
   styleUrls: ['about.page.scss']
 })
 export class AboutPage{
+  //Attribut stockant les utilisateurs issus de la requête
   users$: Object;
   constructor(private data: DataService){
     this.data.getUsers().subscribe(
       data => this.users$ = data
     )
   }
-  /*this.data.getUsers().subscribe(
-    data => this.users$ = data
-  )*/
 
 }

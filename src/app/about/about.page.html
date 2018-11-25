@@ -4,11 +4,18 @@
         <ion-title>Organizational chart of the company</ion-title>
         <ion-list>
             <ion-card *ngFor="let user of users$">
+                <!--
+                    Affichage des données de chaque utilisateur
+                -->
                 <ion-card-header>
                     <ion-avatar>
                         <img src="/assets/images/icon.png">
                     </ion-avatar>
                     <a href="/details/{{user.id}}"><h2>{{user.name}}</h2></a>
+                    <!--
+                        Les données récupérées ne possèdent pas de champ spécifiant le poste occupé par l'employé
+                        J'ai donc simulé cet attribut en filtrant les identifiants.
+                    -->
                     <p *ngIf="user.id ==1">CEO</p>
                     <p *ngIf="user.id ==2 || user.id ==3 || user.id ==4">Manager</p>
                     <p *ngIf="user.id > 4 ">Employee</p>

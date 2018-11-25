@@ -1,16 +1,36 @@
-ion-content{
-    #wrapper{
-        padding-top: 50px;
-        text-align: center;
-    
-    
-        ion-title{
-            font-family: "Roboto", sans-serif;
-            font-size: 4em;
-            padding: 250px;
+@media screen and (max-width: 1199px){
+    ion-content{
+        #wrapper{
+            padding-top: 50px;
+            text-align: center;
+            ion-title{
+                font-family: "Roboto", sans-serif;
+                font-size: 2.5em;
+                padding: 50px;
+                align-items: center;
+            }
+            ion-button{
+                margin: auto auto;
+            }
         }
-        ion-button{
-            margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1200px){
+    ion-content{
+        #wrapper{
+            padding-top: 50px;
+            text-align: center;
+        
+        
+            ion-title{
+                font-family: "Roboto", sans-serif;
+                font-size: 4em;
+                padding: 250px;
+            }
+            ion-button{
+                margin: 0 auto;
+                align-items: center;
+            }
         }
     }
 }

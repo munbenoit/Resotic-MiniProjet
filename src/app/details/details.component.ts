@@ -10,6 +10,7 @@ import { ActivatedRoute } from "@angular/router";
 })
 
 export class DetailsComponent implements OnInit {
+  //Attribut stockant l'utilisateur dont les détails sont demandés
   user$: Object;
   constructor(private route: ActivatedRoute, private data: DataService) {
     this.route.params.subscribe( params => this.user$ = params.id );
