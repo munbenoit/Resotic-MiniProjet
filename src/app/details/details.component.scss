@@ -1,7 +1,7 @@
 ion-content{
     #wrapper{
         padding-top: 100px;
-        #form-wrapper{
+        #details_wrapper{
             width: 900px;
             margin: 0 auto;
             ion-title{
@@ -15,12 +15,18 @@ ion-content{
             ion-item{
                 margin: 45px 15px;
             }
+
+            ion-card{
+                width: 400px;
+            }
+            ion-button{
+                width: 250px;
+                margin: 0 auto;
+            }
+        }
+        ion-icon{
+            margin-right: 10px;
         }
     }
-    ion-card{
-        width: 400px;
-    }
-    ion-icon{
-        margin-right: 10px;
-    }
+    
 }

@@ -27,33 +27,33 @@ Réalisation d'un projet pour l'entreprise Resotic avec une limite de temps d'en
 - Total : environ 12h
 
 ## Mise en place du projet
-- Installation de Ionic
+- Installation de Ionic : 
 npm install -g ionic
-- Créer le projet
+- Créer le projet : 
 ionic start project tabs
-- Essayer Ionic 4
+- Essayer Ionic 4 : 
 YES
-- Installer Ionic Pro SDK
+- Installer Ionic Pro SDK : 
 YES
 - Lier un projet existant
 - Choisir Mini-Projet Resotic
 
 ## Ce que j'ai fait
 - Création de l'application
-1. Création d'un prototype Adobe XD
+1. Création d'un prototype Adobe XD : 
 Permet d'avoir une première idée sur le design du site et de ne pas coder à l'aveugle.
 Le fichier est disponible sur git : prototype.xd (Adobe XD est gratuit)
 2. Mise en place d'un dépot git
-3. Choix de la disposition tabs (bandeau de navigation placé en bas de page) 
+3. Choix de la disposition tabs (bandeau de navigation placé en bas de page) :
 Bien adapté aux mobiles => un peu dommage puisque je n'ai pas mis en place le design mobile
-4. Création d'une navbar + Home page + Contact page
+4. Création d'une navbar + Home page + Contact page : 
 Bien que basé sur le fonctionnement d'Angular, je ne connaissais pas le framework Ionic, j'ai donc tenté de découvrir ses fonctionnalités en commençant le développement de la page d'accueil ainsi que la page de contact. Ce framework, à l'image d'Angular, est assez puissant et permet de faciliter grandement le développement en ajoutant plusieurs fonctionnalités à Angular. Néanmoins, comme vous le remarquerez (ou l'avez remarqué), le design n'est pas réellement mon point fort malgré l'intérêt que je porte pour cette partie très spécifique du développement web.
-5. Récupération des employés
+5. Récupération des employés : 
 Création d'un service http effectuant une requête vers le site jsonplaceholder puis affichage des données dans la page About.
-6. Création de la page Details
+6. Création de la page Details : 
 Utilisation du service http pour effectuer une requête pour récupérer un employé grâce à son id.
 Affichage du résultat dans une nouvelle page.
-- Déploiement du site
+- Déploiement du site : 
 Création d'un compte gratuit et transfert des fichiers.
 
 ## Si j'avais eu plus de temps ...

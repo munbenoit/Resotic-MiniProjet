@@ -6,16 +6,17 @@
             -->
             <ion-title>{{user$.name}}</ion-title>
             <ion-list>
-                <ion-item>email : {{user$.email}}</ion-item>
-                <ion-item>phone number : {{user$.phone}}</ion-item>
-                <ion-item>street : {{user$.address.street}}</ion-item>
-                <ion-item>suite : {{user$.address.suite}}</ion-item>
-                <ion-item>city : {{user$.address.zipcode}} {{user$.address.city}}</ion-item>
+                <ion-row>
+                    <ion-item col-6>email : {{user$.email}}</ion-item>
+                    <ion-item col-6>phone number : {{user$.phone}}</ion-item>
+                </ion-row>
+                
+                <ion-item>address : {{user$.address.suite}} {{user$.address.street}} {{user$.address.zipcode}} {{user$.address.city}}</ion-item>
                 <ion-item>website : {{user$.website}}</ion-item>
             </ion-list>
             <ion-list>
+                <ion-button color="secondary" href=""><ion-icon name="settings"></ion-icon> Edit information</ion-button>
                 <ion-button color="secondary" href="/tabs/(about:about)"><ion-icon name="rewind"></ion-icon> List of Employees</ion-button>
-                <ion-button color="secondary" href=""><ion-icon name="rewind"></ion-icon> Edit information</ion-button>
             </ion-list>
         </div>
         
