@@ -23,9 +23,8 @@ Réalisation d'un projet pour l'entreprise Resotic avec une limite de temps d'en
 1. Ecriture du rapport/readme 2h
 2. Style de la page Details 20 minutes
 3. Ajout d'un bouton d'ajout d'employé et du formulaire 30 minutes
-4. Déploiement du site (TODO)
 - Recherches n'ayant pas abouti : environ 5h (majoritairement samedi)
-- Total : environ 12h
+- Total : environ 14h
 
 ## Mise en place du projet
 - Installation de Ionic : 
@@ -53,8 +52,6 @@ Création d'un service http effectuant une requête vers le site jsonplaceholder
 Utilisation du service http pour effectuer une requête pour récupérer un employé grâce à son id.
 Affichage du résultat dans une nouvelle page.
 7. Ajout d'un formulaire d'ajout d'employé
-- Déploiement du site : 
-Création d'un compte gratuit et transfert des fichiers.
 
 ## Si j'avais eu plus de temps ...
 - Ajout d'un formulaire d'ajout et d'édition des informations d'un employé
