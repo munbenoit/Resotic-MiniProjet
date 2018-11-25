@@ -21,7 +21,45 @@
                     <p *ngIf="user.id > 4 ">Employee</p>
                 </ion-card-header> 
             </ion-card>
+            <div text-center>
+                <ion-button color="secondary" (click)="modalState()"><ion-icon name="add"></ion-icon>Add an employee</ion-button>
+            </div>
+            
         </ion-list>
+        <div [ngClass]="status ? 'active' : 'notactive' " id="add_employee">
+            <div id="form-wrapper">
+                <ion-title>Add an employee</ion-title>
+                <ion-list>
+                    <ion-row>
+                    <ion-col>
+                        <ion-item>
+                            <ion-input type="text" placeholder="First name and last name"></ion-input>
+                        </ion-item>  
+                    </ion-col>
+                    <ion-col>
+                        <ion-item>
+                            <ion-input type="text" name="email" placeholder="Email"></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-input type="text" name="phone" placeholder="Phone number"></ion-input>
+                            </ion-item>  
+                        </ion-col>
+                        <ion-col>
+                            <ion-item>
+                                <ion-input type="text" name="website" placeholder="Website"></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                    <ion-button color="secondary" (click)="modalState()">Submit</ion-button>
+                    <ion-button color="secondary" (click)="submit()">Cancel</ion-button>
+                </ion-list>
+                
+            </div>
+        </div>
     </div>
     
 </ion-content>

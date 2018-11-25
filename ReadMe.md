@@ -21,22 +21,21 @@ Réalisation d'un projet pour l'entreprise Resotic avec une limite de temps d'en
 3. Affichage des employés + styles : 2h
 - Dimanche 25/11/2018
 1. Ecriture du rapport/readme 2h
-2. Style de la page Details 1h (TODO)
-3. Déploiement du site (TODO)
-- Recherches n'ayant pas abouti : environ 4h (majoritairement samedi)
+2. Style de la page Details 20 minutes
+3. Ajout d'un bouton d'ajout d'employé et du formulaire 30 minutes
+4. Déploiement du site (TODO)
+- Recherches n'ayant pas abouti : environ 5h (majoritairement samedi)
 - Total : environ 12h
 
 ## Mise en place du projet
 - Installation de Ionic : 
 npm install -g ionic
-- Créer le projet : 
-ionic start project tabs
-- Essayer Ionic 4 : 
-YES
-- Installer Ionic Pro SDK : 
-YES
-- Lier un projet existant
-- Choisir Mini-Projet Resotic
+- Copier le projet depuis git : 
+git clone https://github.com/munbenoit/Resotic-MiniProjet.git
+- Mettre en place les dépendances : 
+npm install
+- Lancer le projet : 
+ionic serve
 
 ## Ce que j'ai fait
 - Création de l'application
@@ -53,6 +52,7 @@ Création d'un service http effectuant une requête vers le site jsonplaceholder
 6. Création de la page Details : 
 Utilisation du service http pour effectuer une requête pour récupérer un employé grâce à son id.
 Affichage du résultat dans une nouvelle page.
+7. Ajout d'un formulaire d'ajout d'employé
 - Déploiement du site : 
 Création d'un compte gratuit et transfert des fichiers.
 
