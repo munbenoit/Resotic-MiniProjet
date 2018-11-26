@@ -57,7 +57,7 @@ Affichage du résultat dans une nouvelle page.
 - Ajout d'un formulaire d'ajout et d'édition des informations d'un employé
 1. Mise en place d'une requête POST en frontend contenant les informations relatives au nouvel employé
 2. Gestion de la requête POST en backend avec écriture dans un fichier JSON / la base de données des employés
-3. Mise en place d'une requête UPDATE en frontend contenant les informations à modifier
+3. Mise en place d'une requête PUT en frontend contenant les informations à modifier
 4. Gestion de la requête UPDATE en backend avec modification de l'employé (id de l'employé connu) dans le fichier JSON / Table de la base de donnée correspondante
 5. Affichage via un toast ou une card du succès/échec de la requête
 - Style de l'organigramme
